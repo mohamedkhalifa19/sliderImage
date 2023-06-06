@@ -45,6 +45,3 @@ button{
     font-size: 45px;
     transition: 0.4s;
 }
-button:hover{
-    color: rgb(80, 55, 55);
-}
