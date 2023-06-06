@@ -8,15 +8,19 @@ prev.onclick  = function () {
     i--;
     if(i>=0 && i<images.length){
         img.src = images[i]+".jpg";
+        next.disabled = false;
     }
     else
-    i = 0;
+    prev.disabled = true;
 }
 next.onclick  = function () {
     i++;
     if(i>=0 && i<images.length){
         img.src = images[i]+".jpg";
+        prev.disabled = false;
     }
-    else
-    i = images.length -1;
+    else{
+     next.disabled = true;
+    }
+    
 }
